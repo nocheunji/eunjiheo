@@ -11,6 +11,7 @@
 작성 규칙은 AGENTS.md 를 참고하세요.
 """
 import html
+import hashlib
 import re
 import shutil
 import sys
@@ -22,6 +23,7 @@ OUT = ROOT / "_site"
 
 IMAGE_EXT = {".jpg", ".jpeg", ".png", ".gif", ".webp", ".avif"}
 VIDEO_EXT = {".mp4", ".webm", ".mov"}
+CSS_VERSION = hashlib.sha256((ROOT / "assets" / "style.css").read_bytes()).hexdigest()[:12]
 
 
 # ---------- 파싱 ----------
@@ -177,7 +179,7 @@ def page(site, works, current, root, title, main, body_class):
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="{root}assets/style.css">
+<link rel="stylesheet" href="{root}assets/style.css?v={CSS_VERSION}">
 </head>
 <body class="{body_class}">
 <div class="wrap">
