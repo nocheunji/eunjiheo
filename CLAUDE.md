@@ -45,4 +45,4 @@ build.py 흐름: `parse_front_matter` → `render_block`(빈 줄로 나눈 블�
 - 레이아웃·사이드바 변경은 `page()` 함수, 메인 그리드는 `grid()`.
 - 사용자 입력 텍스트는 반드시 `html.escape` / `inline()` 을 거쳐 출력.
 - 변경 후에는 `python build.py` 실행해서 경고 없음 확인, 가능하면 데스크톱(1380px)·모바일(390px) 폭에서 가로 스크롤 없는지 확인.
-- 주인은 코드를 모를 수 있음: 설명은 한국어, 쉬운 말로. git push 는 허락받고 할 것.
+- 주인은 코드를 모를 수 있음: 설명은 한국어, 쉬운 말로. 사용자가 요청한 저장소 변경은 작업 완료 후 commit + `main` push까지 바로 진행하고, 별도 허락을 다시 묻지 않는다. push 후 GitHub Actions가 GitHub Pages에 배포한다.
