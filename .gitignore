@@ -1,0 +1,6 @@
+_site/
+__pycache__/
+.DS_Store
+Thumbs.db
+_inbox/*
+!_inbox/README.md
