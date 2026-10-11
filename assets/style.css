@@ -34,7 +34,7 @@ img, video { display: block; max-width: 100%; }
 /* ───── 왼쪽: 이름 + 작품 목록 ───── */
 .side { position: sticky; top: 40px; align-self: start; max-height: calc(100vh - 80px); overflow-y: auto; scrollbar-width: none; }
 .side::-webkit-scrollbar { display: none; }
-.name { display: block; font-size: 16px; letter-spacing: .14em; margin-bottom: 72px; }
+.name { display: block; font-size: 18px; letter-spacing: .14em; margin-bottom: 72px; }
 .index > summary { display: none; }
 .list { list-style: none; margin: 0; padding: 0; }
 .list li { margin: 0 0 6px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
