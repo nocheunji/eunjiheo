@@ -22,7 +22,7 @@
 
 ## 구조
 ```
-site.md                 사이트 설정 (이름, 설명, email, lang, url)
+site.md                 사이트 설정 (이름, 설명, lang, url)
 pages/<slug>.md         일반 페이지 → /<slug>/   (about, contact 등. 같은 이름 폴더 pages/<slug>/ 에 이미지)
 works/<slug>/info.md    작품 페이지 → /works/<slug>/  (+ 같은 폴더의 사진·영상)
 _inbox/                 새 작품 재료 투입구 (git에 안 올라감)

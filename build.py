@@ -156,10 +156,10 @@ def page(site, works, current, root, title, main, body_class):
         f'{html.escape(w["title"])}</a></li>' for w in works)
     page_items = "\n".join(
         f'<li><a href="{root}{p["slug"]}/" class="muted"{" aria-current=page" if "page:" + p["slug"] == current else ""}>'
-        f'{html.escape(p["title"])}</a></li>' for p in PAGES if p["menu"])
-    extra = []
-    if site.get("email"):
-        extra.append(f'<li><a href="mailto:{html.escape(site["email"])}">Contact</a></li>')
+        f'{html.escape(p["title"])}</a></li>' for p in PAGES if p["menu"] and p["slug"] != "contact")
+    contact_item = "\n".join(
+        f'<li><a href="{root}{p["slug"]}/" class="muted"{" aria-current=page" if "page:" + p["slug"] == current else ""}>'
+        f'{html.escape(p["title"])}</a></li>' for p in PAGES if p["menu"] and p["slug"] == "contact")
     work_group = (
         '<li class="work-group"><details class="works-index">'
         '<summary>Works</summary>'
@@ -190,7 +190,7 @@ def page(site, works, current, root, title, main, body_class):
       <ul class="list">
         {page_items}
         {work_group}
-        {"".join(extra)}
+        {contact_item}
       </ul>
     </details>
   </aside>
