@@ -1,8 +1,8 @@
 /* ───── 색·글꼴 (여기만 바꿔도 분위기가 달라져요) ───── */
 :root {
-  --bg: #ffffff;
-  --fg: #111111;
-  --muted: #8a8a8a;
+  --bg: #000000;
+  --fg: #ffffff;
+  --muted: #ffffff;
   --line: #e6e6e6;
   --font: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, "Apple SD Gothic Neo", "Malgun Gothic", monospace;
   --side: 250px;      /* 왼쪽 목록 너비 */
