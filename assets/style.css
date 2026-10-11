@@ -4,7 +4,7 @@
   --fg: #ffffff;
   --muted: #ffffff;
   --line: #e6e6e6;
-  --font: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, "Apple SD Gothic Neo", "Malgun Gothic", monospace;
+  --font: "Helvetica Neue", Helvetica, Arial, sans-serif;
   --side: 250px;      /* 왼쪽 목록 너비 */
   --gap: 40px;        /* 썸네일 간격 */
   --thumb-ratio: 3 / 2; /* 썸네일 비율 */

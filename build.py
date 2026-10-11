@@ -179,9 +179,6 @@ def page(site, works, current, root, title, main, body_class):
 <meta property="og:title" content="{html.escape(title)}">
 <meta property="og:description" content="{desc}">
 {og}
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{root}assets/style.css?v={CSS_VERSION}">
 </head>
 <body class="{body_class}">
