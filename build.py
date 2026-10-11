@@ -158,11 +158,14 @@ def page(site, works, current, root, title, main, body_class):
         f'<li><a href="{root}{p["slug"]}/" class="muted"{" aria-current=page" if "page:" + p["slug"] == current else ""}>'
         f'{html.escape(p["title"])}</a></li>' for p in PAGES if p["menu"])
     extra = []
-    if site.get("instagram"):
-        extra.append(f'<li><a href="https://instagram.com/{html.escape(site["instagram"].lstrip("@"))}" '
-                     'target="_blank" rel="noopener">Instagram</a></li>')
     if site.get("email"):
         extra.append(f'<li><a href="mailto:{html.escape(site["email"])}">Contact</a></li>')
+    work_group = (
+        '<li class="work-group"><details class="works-index" open>'
+        '<summary>Works</summary>'
+        f'<ul class="work-list">{items}</ul>'
+        '</details></li>'
+    ) if items else ""
     desc = html.escape(site.get("description", name))
     og = f'<meta property="og:image" content="{site["url"].rstrip("/")}/{current_thumb(works, current)}">' \
         if site.get("url") and current_thumb(works, current) else ""
@@ -189,7 +192,7 @@ def page(site, works, current, root, title, main, body_class):
       <summary>Index</summary>
       <ul class="list">
         {page_items}
-        {items}
+        {work_group}
         {"".join(extra)}
       </ul>
     </details>

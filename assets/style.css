@@ -35,11 +35,16 @@ img, video { display: block; max-width: 100%; }
 .side { position: sticky; top: 40px; align-self: start; max-height: calc(100vh - 80px); overflow-y: auto; scrollbar-width: none; }
 .side::-webkit-scrollbar { display: none; }
 .name { display: block; font-size: 16px; letter-spacing: .14em; margin-bottom: 72px; }
-.index summary { display: none; }
+.index > summary { display: none; }
 .list { list-style: none; margin: 0; padding: 0; }
 .list li { margin: 0 0 6px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .list .muted { color: var(--muted); }
 .list a[aria-current] { text-decoration: underline; text-underline-offset: 4px; }
+.works-index summary { cursor: pointer; list-style: none; }
+.works-index summary::-webkit-details-marker { display: none; }
+.works-index summary::after { content: " +"; }
+.works-index[open] summary::after { content: " −"; }
+.work-list { list-style: none; margin: 5px 0 2px 12px; padding: 0; }
 
 /* ───── 오른쪽: 썸네일 그리드 ───── */
 .main { min-width: 0; padding-top: 108px; }
@@ -83,12 +88,12 @@ img, video { display: block; max-width: 100%; }
   .wrap { grid-template-columns: 1fr; gap: 0; padding: 22px 16px 60px; }
   .side { position: static; max-height: none; overflow: visible; }
   .name { margin-bottom: 18px; }
-  .index summary {
+  .index > summary {
     display: inline-block; cursor: pointer; color: var(--muted); list-style: none; margin-bottom: 10px;
   }
-  .index summary::-webkit-details-marker { display: none; }
-  .index summary::after { content: " +"; }
-  .index[open] summary::after { content: " −"; }
+  .index > summary::-webkit-details-marker { display: none; }
+  .index > summary::after { content: " +"; }
+  .index[open] > summary::after { content: " −"; }
   .list { margin-bottom: 18px; }
   .main, .detail .main, .about .main { padding-top: 24px; }
   .grid { grid-template-columns: 1fr 1fr; gap: 28px 14px; }

@@ -5,7 +5,7 @@
 답변은 한국어로, 쉬운 말로 해주세요.
 
 ## 구조
-- `site.md` — 이름, 인스타그램, 이메일 등 사이트 설정
+- `site.md` — 이름, 설명, 이메일 등 사이트 설정
 - `pages/<이름>.md` — About 같은 일반 페이지 (파일 하나 = 페이지 하나, 왼쪽 목록 위쪽에 회색으로 표시)
 - `works/<영문-소문자-하이픈>/` — 작품 하나 = 폴더 하나
   - `info.md` — 작품 정보와 본문
@@ -63,6 +63,6 @@ Direction & 3D Your Name
 ## 수정·삭제 요청
 - "○○ 작품 설명 바꿔줘", "순서 맨 앞으로" → 해당 `info.md`만 수정 (`order: 1` 등)
 - "○○ 작품 내려줘" → 지우지 말고 `hidden: true`를 먼저 제안
-- 이름·SNS → `site.md`, About 글 → `pages/about.md`
+- 이름·이메일 → `site.md`, About 글·SNS 링크 → `pages/about.md`
 - "Contact 페이지 만들어줘" → `pages/contact.md` 생성 (위쪽에 `title`, `order`(목록 순서), 필요하면 `menu: false`로 목록에서 숨김). 형식은 info.md 본문과 같음
 - 색·글꼴·간격 등 디자인 → `assets/style.css` 맨 위 `:root` 값부터 조정

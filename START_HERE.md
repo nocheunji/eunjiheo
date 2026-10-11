@@ -37,7 +37,7 @@
 ## 파일 구조 (요약)
 
 ```
-site.md                 사이트 설정: 이름, 설명, instagram, email, url
+site.md                 사이트 설정: 이름, 설명, email, url
 pages/about.md          About 페이지 (pages/ 안의 .md 파일 하나 = 페이지 하나)
 works/<폴더>/info.md     작품 하나 = 폴더 하나 (info.md + 사진·영상)
 assets/style.css        디자인 (맨 위 :root 값으로 색·글꼴·간격 조정)
@@ -84,7 +84,7 @@ _inbox/                 ← 새 작품 재료 임시 보관함. 업로드하지 
 ### 5단계 — 기본 정보 바꾸기
 지금은 예시 값이 들어 있어요. 저장소에서 파일을 열고 오른쪽 위 **연필 아이콘(Edit)** → 수정 → **Commit changes**.
 수정할 때마다 1~2분 뒤 사이트에 자동 반영돼요.
-- `site.md`: `name`(이름), `description`, `instagram`(아이디만), `email`,
+- `site.md`: `name`(이름), `description`, `email`,
   `url`(4단계의 사이트 주소. 예: `https://아이디.github.io` — 링크 공유 미리보기 이미지에 쓰여요)
 - `pages/about.md`: 소개글
 - `works/sample-...` 예시 작품 3개는 실제 작품을 올린 뒤 지워요 (폴더 안 파일을 열고 ··· 메뉴 → Delete file).

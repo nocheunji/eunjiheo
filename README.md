@@ -16,7 +16,7 @@ GitHub Pages로 **무료** 배포됩니다. DB나 서버는 없어요.
    - `.github` 폴더처럼 점(.)으로 시작하는 폴더가 안 보이면: 맥은 Finder에서 `Cmd + Shift + .`, 윈도우는 탐색기 `보기 → 숨긴 항목` 체크
 3. 저장소의 **Settings → Pages → Build and deployment → Source** 를 **GitHub Actions** 로 변경
 4. **Actions** 탭에서 초록색 체크가 뜨면 완료 (1~2분). 주소로 접속해 보세요.
-5. `site.md`(이름·인스타·이메일)와 `pages/about.md`(소개글)를 열어 연필 아이콘으로 고치고 Commit → 자동 반영
+5. `site.md`(이름·이메일)와 `pages/about.md`(소개글)를 열어 연필 아이콘으로 고치고 Commit → 자동 반영
 
 > 개인 도메인(예: `yourname.com`)은 나중에 Settings → Pages → Custom domain 에서 연결할 수 있어요. 도메인 구입비만 들어요.
 
