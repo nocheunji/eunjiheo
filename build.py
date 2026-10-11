@@ -161,7 +161,7 @@ def page(site, works, current, root, title, main, body_class):
     if site.get("email"):
         extra.append(f'<li><a href="mailto:{html.escape(site["email"])}">Contact</a></li>')
     work_group = (
-        '<li class="work-group"><details class="works-index" open>'
+        '<li class="work-group"><details class="works-index">'
         '<summary>Works</summary>'
         f'<ul class="work-list">{items}</ul>'
         '</details></li>'
